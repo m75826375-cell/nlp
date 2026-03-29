@@ -1,4 +1,4 @@
-torch>=2.1.0
+torch==2.1.0
 transformers==4.38.2
 datasets>=2.13.0
 sentencepiece>=0.1.99
@@ -15,4 +15,3 @@ fuzzywuzzy>=0.18.0
 python-levenshtein>=0.21.0
 sentence-transformers>=2.2.2
 snorkel>=0.9.10
-gdown
