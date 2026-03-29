@@ -180,8 +180,9 @@ with tabs[0]:
                 outputs = model(**encoded)
                 probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
                 confs, preds = torch.max(probs, dim=-1)
-                predictions = preds[0].cpu().numpy()
-                confidences = confs[0].cpu().numpy()
+                predictions = preds[0].detach().cpu().numpy() if hasattr(preds[0], "detach") else preds[0]
+                confidences = confs[0].detach().cpu().numpy() if hasattr(confs[0], "detach") else confs[0]
+                #confidences = confs[0].cpu().numpy()
 
             word_ids = encoded.word_ids(batch_index=0)
             pred_labels = []
