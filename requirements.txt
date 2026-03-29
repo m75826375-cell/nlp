@@ -1,0 +1,17 @@
+torch>=2.1.0
+transformers>=4.40.0
+datasets>=2.13.0
+sentencepiece>=0.1.99
+tokenizers>=0.14.0
+streamlit>=1.25.0
+plotly>=5.16.0
+pandas>=2.1.0
+numpy>=1.27.0
+matplotlib>=3.8.0
+shap>=0.42.1
+numba>=0.57.2
+llvmlite>=0.41.0
+fuzzywuzzy>=0.18.0
+python-levenshtein>=0.21.0
+sentence-transformers>=2.2.2
+snorkel>=0.9.10
