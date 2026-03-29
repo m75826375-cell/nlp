@@ -19,9 +19,9 @@ from config import model_path,C_MODEL_PATH
 # -----------------------------------------------------------
 # Streamlit Config
 # -----------------------------------------------------------
-st.set_page_config(layout="wide", page_title="ADE Dashboard")
+st.set_page_config(layout="wide", page_title="ADEGuard Dashboard")
 
-st.title("🧠 An NLP Based System for ADE Detection 🧠")
+st.title("🧠 ADEGuard 🧠")
 st.subheader("Hybrid ADE Detection & Severity Analysis")
 
 # -----------------------------------------------------------
